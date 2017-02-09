@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true"></constant>
+
+	<package  name="userAction"  extends="struts-default" namespace="">
+	     	<!-- 说爱你 
+	     	<action name="sayLove" class="com.ljs.Action.UserAction" method="sayLoveyou">
+	     		<result name="yes">suc.jsp</result>
+		     	<result name="no">no.jsp</result>
+	     	</action>
+		-->
+	     	<action name="sayMasini" class="com.ljs.Action.UserAction" method="sayMasini"></action>
+	     	
+	     	<action name="addUser" class="com.ljs.Action.UserAction" method="addUser"></action>
+	     	
+			<action name="showJapTag" class="com.ljs.Action.UserAction" method="showJapTagJsp">
+				
+				<result name="JapTagJsp">japTag.jsp</result>
+			</action>
+		
+	</package>  
+	
+	
+	<package name="personAction"  extends="struts-default" namespace="/personAction">
+		<action name="sayLove" class="com.ljs.Action.PersonAction" method="sayLoveyou">
+		</action>
+		
+	</package>
+	
+	
+	<package name="showAction"  extends="struts-default">
+		<action name="sayLoveyou" class="com.ljs.Action.ShowAction" method="sayLoveyou">
+			<result name="login2">NewFile.jsp</result>
+		</action>
+	</package>
+</struts>
