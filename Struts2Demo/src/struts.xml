@@ -6,7 +6,7 @@
 	<constant name="struts.ognl.allowStaticMethodAccess" value="true"></constant>
 
 	<package  name="userAction"  extends="struts-default" namespace="">
-	     	<!-- 说爱你 
+	     	<!-- 说爱你 a
 	     	<action name="sayLove" class="com.ljs.Action.UserAction" method="sayLoveyou">
 	     		<result name="yes">suc.jsp</result>
 		     	<result name="no">no.jsp</result>
